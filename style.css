@@ -1,0 +1,145 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title section */
+.entry {
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #007bff;
+    color: black;
+    font-weight: bolder;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.title label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.title input[type="text"] {
+    width: 50%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.title button[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.title button[type="submit"]:hover {
+    background-color: #f0f0f0;
+}
+
+/* Tasks section */
+.tasks {
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tasks label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tasks input[type="text"] {
+    width: 50%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.tasks button[type="submit"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tasks button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Task list */
+#list {
+    list-style: none;
+    padding: 0;
+}
+
+#list li {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#list li:first-child{
+    border-radius: 8px 8px 0 0;
+}
+
+#list li:last-child {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+#list li input[type="checkbox"] {
+    margin-left: 10px; 
+    width: 20px; 
+    height: 20px; 
+}
+
+#list li input[type="checkbox"]:checked + label {
+    text-decoration: line-through; /* Apply strike-through effect to the label text */
+}
+
+
+
+
+.main{
+    padding: 4px;
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+    background-color: rgb(250, 205, 25);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .title input[type="text"],
+    .tasks input[type="text"] {
+        width: 100%;
+    }
+}
