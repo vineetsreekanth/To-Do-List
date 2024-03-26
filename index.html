@@ -26,7 +26,7 @@
             </form>
         </div>
     </div>
-    <div class="main">
+    <div class="main" id="main" style="display: none;">
         <!-- <h1>To-Do List</h1> -->
         <h1 id="title"></h1>
         <ul id="list"></ul>
@@ -39,6 +39,7 @@
         let title = document.getElementById('title1').value;
         document.getElementById('title').innerHTML = "To-Do List (" + title.trim() + ")";
         document.getElementById('title1').value = ""; 
+        document.getElementById('main').style.display = 'block';
     })
 
 
